@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Follow Me</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_trail__track">Trail_Track</string>
+    <string name="accountConfirmed">You have been logged in!</string>
+    <string name="welcome">Follow Me</string>
+    <string name="username">User Name:</string>
+    <string name="paswrd">Password:</string>
+    <string name="user">Username:</string>
+    <string name="signi"></string>
+    <string name="signin">Sign In</string>
+    <string name="register">Register</string>
+    <string name="login">LOGIN</string>
+    <string name="text">I dont have an account. Register Me!</string>
+    <string name="splashScreen">SplashScreen</string>
+    <string name="title_activity_splash_screen">Follow Me</string>
+    <string name="new_user">New User Registration</string>
+    <string name="fName">First Name:</string>
+    <string name="lName">Last Name:</string>
+    <string name="newThanks">Thank you for choosing FollowMe! By clicking Register, you agree to the Terms of Service.</string>
+    <string name="regButtonText">Register</string>
+    <string name="confirmpswrd">Confirm Password:</string>
+    <string name="title_activity_register_user">Registration</string>
+
+</resources>
