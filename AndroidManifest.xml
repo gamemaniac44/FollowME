@@ -4,19 +4,36 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <permission
+        android:name="com.example.followME.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.followME.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="19"
         android:targetSdkVersion="20" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/followmelogo"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_splash_screen"
+            android:label="@string/app_name"
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
@@ -26,18 +43,68 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginScreen"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
+        
         <activity
-            android:name=".Trail_Track"
-            android:label="@string/title_activity_trail__track" >
+            android:name=".MainScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
+        
         <activity
-            android:name=".RegisterUserActivity"
-            android:label="@string/title_activity_register_user" >
+            android:name=".LoadExcursion"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".EditExcursion"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        
+        <activity
+            android:name=".ViewObservation"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".EditObservation"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".AddObservation"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".SettingsFragment"
+            android:label="@string/title_activity_settings_fragment" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAMrAKoGEfJnmnEU057XuyiYKAF_xTbbrM" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" >
         </activity>
     </application>
 

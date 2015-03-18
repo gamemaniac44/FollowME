@@ -1,5 +1,6 @@
 package com.example.followMe;
 
+import com.example.followMe.R;
 import com.example.followMe.util.SystemUiHider;
 
 import android.annotation.SuppressLint;
@@ -54,7 +55,7 @@ public class SplashScreen extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.activity_splash_screen);
+		setContentView(R.layout.splash_screen);
 
 		final View controlsView = findViewById(R.id.fullscreen_content_controls);
 		final View contentView = findViewById(R.id.fullscreen_content);
@@ -121,7 +122,7 @@ public class SplashScreen extends Activity {
 					//code to execute when splash screen is finished
 					public void run(){
 						//create an intent to start the Main Actitvity
-						Intent mainIntent = new Intent(getApplicationContext(), MainActivity.class);
+						Intent mainIntent = new Intent(getApplicationContext(), LoginScreen.class);
 						startActivity(mainIntent);
 					}
 				}, screenDisplayTime);

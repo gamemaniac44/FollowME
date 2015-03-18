@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical" >
+
+ 	<TextView
+        android:id="@+id/editObservationsActivityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0"
+        android:text="@string/editObservationActivityTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#009e08" />
+    
+    <ListView
+        android:id="@+id/editObservationsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/editObservationsCancelButton"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0"
+        android:background="#009e08"
+        android:text="@string/back"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:onClick="backMain" />
+
+</LinearLayout>

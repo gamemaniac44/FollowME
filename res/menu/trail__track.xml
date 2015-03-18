@@ -2,11 +2,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.followMe.Trail_Track" >
-
+    
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/actionSettings"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
+        android:title="@string/actionSettings"
+        android:showAsAction="ifRoom"/>
+    
+    <item 
+        android:id="@+id/startGPS" 
+        android:title="@string/menuStartGPSRecording"
+        android:icon="@drawable/ic_action_record"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:id="@+id/stopGPS"
+        android:title="@string/menuStopGPSRecording"
+        android:icon="@drawable/ic_action_stop"
+        android:showAsAction="always"/>
 
 </menu>

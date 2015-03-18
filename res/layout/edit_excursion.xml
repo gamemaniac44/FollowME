@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:scrollbars="vertical"
+    android:fillViewport="true" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:orientation="vertical" >
+		            
+		    <TextView
+		        android:id="@+id/editExcursionActivityTitle"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+		        android:layout_marginLeft="30dp"
+		        android:layout_marginRight="30dp"		        
+		        android:layout_marginTop="5dp"
+		        android:text="@string/editExcursionActivityTitle"
+		        android:textColor="#009e08"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<TextView
+			    android:id="@+id/editExcursionTitleTextView"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:text="@+string/title"
+			    android:textColor="#009e08" />
+
+			<EditText
+			    android:id="@+id/editExcursionTitleEditText"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:inputType="text">
+			    <requestFocus />
+			</EditText>
+			
+			<TextView
+			    android:id="@+id/editExcursionDescTextView"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:text="@+string/description"
+			    android:textColor="#009e08" />
+			
+			<EditText
+			    android:id="@+id/editExcursionDescEditText"
+	        	android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:singleLine="false"
+			    android:inputType="textMultiLine" 
+			    android:lines="4"
+			    android:minLines="1"
+			    android:maxLines="10"
+			    android:scrollbars="vertical" />
+
+			<Switch
+			    android:id="@+id/editExcursionTravelModeSwitch"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:text="@string/travelModeSwitchLabel"
+			    android:textColor="#009e08"
+			    android:textOff="@string/walkingMode"
+			    android:textOn="@string/drivingMode" />
+
+			<Switch
+			    android:id="@+id/editExcursionShareModeSwitch"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:text="@string/shareModeSwitchLabel"
+			    android:textColor="#009e08"
+			    android:textOff="@string/privateMode"
+			    android:textOn="@string/publicMode" />
+
+			<Button
+			    android:id="@+id/editExcursionSaveButton"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="15dp"
+			    android:background="#009e08"
+			    android:text="@string/save"
+			    android:textColor="#ffffff"
+			    android:textSize="12sp"
+			    android:onClick="saveExcursion" />
+			
+			<Button
+			    android:id="@+id/editExcursionDeleteButton"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="15dp"
+			    android:background="#009e08"
+			    android:text="@string/delete"
+			    android:textColor="#ffffff"
+			    android:textSize="12sp"
+			    android:onClick="deleteExcursion" />
+			
+			<Button
+			    android:id="@+id/editExcursionCancelButton"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+			    android:layout_marginTop="15dp"
+			    android:background="#009e08"
+			    android:text="@string/cancel"
+			    android:textColor="#ffffff"
+			    android:textSize="12sp"
+			    android:onClick="backMain" />
+
+		</LinearLayout>
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fillViewport="true" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:orientation="vertical" >
+
+		    <TextView
+		        android:id="@+id/addObservationActivityTitle"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"	        
+		        android:text="@string/addObservationActivityTitle"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="#009e08" />
+		     
+		    <TextView
+		        android:id="@+id/addObservationTitleTextView"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:text="@+string/title" 
+		        android:textColor="#009e08"/>
+		
+		    <EditText
+		          android:id="@+id/addObservationTitleEditText"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:inputType="text" />
+		    
+		     <TextView
+		         android:id="@+id/addObservationDescriptionTextView"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_marginTop="5dp"
+		         android:text="@+string/description"
+		         android:textColor="#009e08" />
+		
+		     <EditText
+		         android:id="@+id/addObservationDescriptionEditText"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:inputType="textMultiLine"
+		         android:lines="4"
+		         android:minLines="1"
+		         android:maxLines="10" 
+		         android:scrollbars="vertical"/>
+		     
+		     <TextView
+		        android:id="@+id/addObservationGPSTextView"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:text="@+string/gps"
+		        android:textColor="#009e08" />
+		     
+		     <TextView
+		        android:id="@+id/addObservationGPSDataTextView"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" 		        
+		        style="?android:attr/editTextStyle" />
+		     		
+		      <Button
+		          android:id="@+id/addObservationSaveButton"
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_marginTop="15dp"	         
+		          android:background="#009e08"
+		          android:text="@string/save"
+		          android:textColor="#ffffff"
+		          android:textSize="12sp"
+		          android:onClick="saveObservation" />
+		     
+		      <Button
+		         android:id="@+id/deleteObservationButton"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_marginTop="15dp"
+		         android:background="#009e08"
+		         android:text="@string/delete"
+		         android:textColor="#ffffff"
+		         android:textSize="12sp"
+		         android:onClick="deleteObservation" />
+		      
+		     <Button
+		         android:id="@+id/addObservationCancelButton"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_marginTop="15dp"
+		         android:background="#009e08"
+		         android:text="@string/cancel"
+		         android:textColor="#ffffff"
+		         android:textSize="12sp"
+		         android:onClick="backMain" />
+
+
+		</LinearLayout>
+</ScrollView>
